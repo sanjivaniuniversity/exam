@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import mascotPresent from "@/assets/mascot-present.png";
+import logo from "@/assets/avrmitra-logo.svg";
 
 const mainItems = [
   { to: "/onboarding", label: "My Onboarding", icon: User },
@@ -60,10 +61,9 @@ export const Sidebar = ({ onNavigate }: SidebarProps) => {
 
   return (
     <aside className="flex h-full w-full shrink-0 flex-col overflow-x-hidden border-r border-border/70 bg-sidebar px-3 pb-5 pt-6 sm:px-4 lg:w-[268px]">
-      <div className="px-4 pb-6">
-        <h1 className="text-[33px] font-semibold tracking-tight text-primary">
-          AVR Shaper<sup className="text-xs">TM</sup>
-        </h1>
+      <div className="px-4 pb-6 flex items-center gap-3">
+        <img src={logo} alt="AVRMitra logo" className="h-10 w-auto" />
+        <span className="text-[20px] font-semibold tracking-tight text-primary">AVRMitra</span>
       </div>
 
       <nav className="flex flex-1 flex-col gap-1.5 overflow-y-auto pr-1" onClick={onNavigate}>
@@ -117,7 +117,7 @@ export const Sidebar = ({ onNavigate }: SidebarProps) => {
         <p className="px-2 text-sm font-medium tracking-[0.01em] text-foreground/70">Need help?</p>
         <img
           src={mascotPresent}
-          alt="AVR Shaper assistant mascot"
+          alt="AVRMitra assistant mascot"
           loading="lazy"
           width={512}
           height={896}

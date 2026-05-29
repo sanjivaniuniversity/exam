@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AVR Shaper design system - all colors HSL */
+/* AVRMitra design system - all colors HSL */
 
 @layer base {
   :root {
@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* AVR Shaper brand blue */
+    /* AVRMitra brand blue */
     --primary: 211 100% 36%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 207 90% 54%;
